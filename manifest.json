@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "オレオレChrome拡張 ENGAWA",
+    "version": "1.0",
+    "description": "This is a sample Chrome extension.",
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gyazo.com/*"
+            ],
+            "js": [
+                "gyazo.js"
+            ]
+        }
+    ]
+}
