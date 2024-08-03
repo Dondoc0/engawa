@@ -1,14 +1,26 @@
-const table = document.createElement('table');
-for (let i = 0; i < 700; i++) {
-    const tr = document.createElement('tr');
+// Launcherの枠組みを生成する
+function generateLauncher() {
+    const table = document.createElement("table");
     
-    for (let j = 0; j < 10; j++) {
-        const td = document.createElement('td');
-        // td内にテキストを追加
-        td.textContent = i + '-' + j;
-        // td要素をtr要素の子に追加
-        tr.appendChild(td);
+    for (let i = 0; i < 5; i++) {
+        const tr = document.createElement("tr");
+
+        for (let j = 0; j < 5; j++) {
+            const td = document.createElement("td");
+            const tdText = document.createTextNode(`${i}-${j}`);
+            td.appendChild(tdText);
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
     }
+    document.getElementById('launcher').appendChild(table);
 }
-// 生成したtable要素を追加する
-document.getElementById('launcher').appendChild(table);
+
+// jsonファイルからfaviconとリンクを取得してtableにいれる
+function generateContent() {
+
+}
+
+
+
+generateLauncher();
