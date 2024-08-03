@@ -16,11 +16,11 @@ function generateLauncher() {
     document.getElementById('launcher').appendChild(table);
 }
 
+
 // jsonファイルからfaviconとリンクを取得してtableにいれる
 function generateContent() {
-
+    
 }
-
 
 
 generateLauncher();
