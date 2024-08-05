@@ -9,7 +9,7 @@
         "scripting"
     ],
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "launcher.html"
     },
     "content_scripts": [
         {
