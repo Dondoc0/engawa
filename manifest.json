@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "オレオレChrome拡張 ENGAWA",
+    "name": "ENGAWA",
     "version": "1.0",
     "description": "This is a sample Chrome extension.",
     "permissions": [
@@ -8,9 +8,6 @@
         "activeTab",
         "scripting"
     ],
-    "action": {
-        "default_popup": "launcher.html"
-    },
     "content_scripts": [
         {
             "matches": [
