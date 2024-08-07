@@ -4,7 +4,7 @@ function getData() {
 
     if (current_url.match(gyazo_url_regex)) {
         console.log("Gyazoページです");
-        chrome.runtime.sendMessage({ action: "addContextMenu" });
+        
     }
 }
 
